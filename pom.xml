@@ -31,6 +31,17 @@
 
   </properties>
 
+  <distributionManagement>
+      <snapshotRepository>
+          <id>bucketrepo</id>
+          <url>http://mavenrepo:8080/bucketrepo/deploy/maven-snapshots/</url>
+      </snapshotRepository>
+      <repository>
+          <id>bucketrepo</id>
+          <url>http://mavenrepo:8080/bucketrepo/deploy/maven-releases/</url>
+      </repository>
+  </distributionManagement>
+
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
